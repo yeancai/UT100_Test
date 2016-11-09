@@ -1,0 +1,287 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/07/2016  18:47:38  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL4.5\C51\BIN\BL51.EXE STARTUP.obj, Uart.obj, BufferRing.obj, mian.obj, DevObj.obj, Isr.obj TO UT100_Test RAMSIZE (
+>> 256)
+
+
+MEMORY MODEL: LARGE
+
+
+INPUT MODULES INCLUDED:
+  STARTUP.obj (?C_STARTUP)
+  Uart.obj (UART)
+  BufferRing.obj (BUFFERRING)
+  mian.obj (MIAN)
+  DevObj.obj (DEVOBJ)
+  Isr.obj (ISR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?COPY)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?CLDPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?CLDOPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?CSTOPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?ILDIX)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?ILDPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?ILDOPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?IILDPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?IILDOPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?ISTPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?ISTOPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?SLCMP)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PLDOPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PSTOPTR)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?ICASE)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?STRCMP)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (STRLEN)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?MEMSET)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?IILDX)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PLDIDATA)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PSTIDATA)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PLDXDATA)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PSTXDATA)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PLDPDATA)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PSTPDATA)
+  C:\KEIL4.5\C51\LIB\C51L.LIB (?C?PLDCODE)
+
+
+LINK MAP OF MODULE:  UT100_Test (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     003EH     UNIT         ?DT?MIAN
+            IDATA   0046H     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     012CH     UNIT         ?XD?MIAN
+            XDATA   012CH     0024H     UNIT         _XDATA_GROUP_
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/07/2016  18:47:38  PAGE 2
+
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0008H     UNIT         ?PR?_COM1_SEND_BYTE?UART
+            CODE    000BH     0003H     ABSOLUTE     
+            CODE    000EH     0015H     UNIT         ?PR?_FLUSHBUFFERRING?BUFFERRING
+            CODE    0023H     0003H     ABSOLUTE     
+            CODE    0026H     0015H     UNIT         ?PR?_STRLEN?STRLEN
+            CODE    003BH     0003H     ABSOLUTE     
+                    003EH     0005H                  *** GAP ***
+            CODE    0043H     0003H     ABSOLUTE     
+            CODE    0046H     0593H     UNIT         ?C?LIB_CODE
+            CODE    05D9H     0207H     UNIT         ?PR?_GETDATAFROMBUFFERRINGEX?BUFFERRING
+            CODE    07E0H     00F6H     UNIT         ?PR?RCVDEV?DEVOBJ
+            CODE    08D6H     00EAH     UNIT         ?PR?_ADDDATATOBUFFERRING?BUFFERRING
+            CODE    09C0H     00EAH     UNIT         ?PR?_ADDDATATOBUFFERRING1?BUFFERRING
+            CODE    0AAAH     00B1H     UNIT         ?PR?MAIN?MIAN
+            CODE    0B5BH     0099H     UNIT         ?CO?DEVOBJ
+            CODE    0BF4H     0092H     UNIT         ?PR?TM0_ISR?ISR
+            CODE    0C86H     0076H     UNIT         ?PR?POLLUPS?DEVOBJ
+            CODE    0CFCH     0068H     UNIT         ?PR?_INITBUFFERRING?BUFFERRING
+            CODE    0D64H     0054H     UNIT         ?PR?UART1_ISR?ISR
+            CODE    0DB8H     0053H     UNIT         ?PR?_UART0INIT?MIAN
+            CODE    0E0BH     0051H     UNIT         ?PR?UART0_ISR?ISR
+            CODE    0E5CH     004CH     UNIT         ?PR?VERIFY?DEVOBJ
+            CODE    0EA8H     004CH     UNIT         ?PR?PCA_ISR?ISR
+            CODE    0EF4H     0046H     UNIT         ?PR?_COM1_SEND_BUFF?UART
+            CODE    0F3AH     0046H     UNIT         ?PR?_COM2_SEND_BUFF?UART
+            CODE    0F80H     003EH     UNIT         ?PR?_UART1INIT?MIAN
+            CODE    0FBEH     003CH     UNIT         ?PR?_QUARYBUFFERRING?BUFFERRING
+            CODE    0FFAH     0031H     UNIT         ?PR?PCA_INTI?MIAN
+            CODE    102BH     0014H     UNIT         ?PR?TIMER0INIT?MIAN
+            CODE    103FH     000DH     UNIT         ?PR?DELAY5000MS?MIAN
+            CODE    104CH     000CH     UNIT         ?C_C51STARTUP
+            CODE    1058H     000CH     UNIT         ?PR?STCINIT?MIAN
+            CODE    1064H     000BH     UNIT         ?PR?_COM2_SEND_BYTE?UART
+
+
+
+OVERLAY MAP OF MODULE:   UT100_Test (?C_STARTUP)
+
+
+SEGMENT                                           XDATA_GROUP
+  +--> CALLED SEGMENT                           START    LENGTH
+---------------------------------------------------------------
+?C_C51STARTUP                                   -----    -----
+  +--> ?PR?MAIN?MIAN
+
+?PR?MAIN?MIAN                                   -----    -----
+  +--> ?PR?TIMER0INIT?MIAN
+  +--> ?PR?PCA_INTI?MIAN
+  +--> ?PR?_UART0INIT?MIAN
+  +--> ?PR?_UART1INIT?MIAN
+  +--> ?PR?STCINIT?MIAN
+  +--> ?PR?_INITBUFFERRING?BUFFERRING
+  +--> ?PR?DELAY5000MS?MIAN
+  +--> ?PR?POLLUPS?DEVOBJ
+  +--> ?PR?RCVDEV?DEVOBJ
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/07/2016  18:47:38  PAGE 3
+
+
+  +--> ?PR?VERIFY?DEVOBJ
+
+?PR?_INITBUFFERRING?BUFFERRING                  012CH    000AH
+
+?PR?POLLUPS?DEVOBJ                              012CH    0019H
+  +--> ?CO?DEVOBJ
+  +--> ?PR?_STRLEN?STRLEN
+  +--> ?PR?_COM2_SEND_BUFF?UART
+
+?PR?_COM2_SEND_BUFF?UART                        0145H    0005H
+  +--> ?PR?_COM2_SEND_BYTE?UART
+
+?PR?RCVDEV?DEVOBJ                               012CH    0001H
+  +--> ?PR?_GETDATAFROMBUFFERRINGEX?BUFFERRING
+  +--> ?CO?DEVOBJ
+  +--> ?PR?_STRLEN?STRLEN
+  +--> ?PR?_COM1_SEND_BUFF?UART
+  +--> ?PR?_FLUSHBUFFERRING?BUFFERRING
+
+?PR?_GETDATAFROMBUFFERRINGEX?BUFFERRING         012DH    000CH
+  +--> ?PR?_QUARYBUFFERRING?BUFFERRING
+
+?PR?_COM1_SEND_BUFF?UART                        012DH    0005H
+  +--> ?PR?_COM1_SEND_BYTE?UART
+
+?PR?VERIFY?DEVOBJ                               012CH    0001H
+  +--> ?PR?_GETDATAFROMBUFFERRINGEX?BUFFERRING
+  +--> ?CO?DEVOBJ
+  +--> ?PR?_FLUSHBUFFERRING?BUFFERRING
+
+*** NEW ROOT ***************************************************
+
+?PR?UART0_ISR?ISR                               -----    -----
+  +--> ?PR?_ADDDATATOBUFFERRING?BUFFERRING
+
+?PR?_ADDDATATOBUFFERRING?BUFFERRING             014AH    0003H
+
+*** NEW ROOT ***************************************************
+
+?PR?UART1_ISR?ISR                               -----    -----
+  +--> ?PR?_ADDDATATOBUFFERRING1?BUFFERRING
+
+?PR?_ADDDATATOBUFFERRING1?BUFFERRING            014DH    0003H
+
+
+
+SYMBOL TABLE OF MODULE:  UT100_Test (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C?COPY
+  C:0116H         PUBLIC        ?C?COPY
+  -------         ENDMOD        ?C?COPY
+
+  -------         MODULE        ?C?CLDPTR
+  C:013CH         PUBLIC        ?C?CLDPTR
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/07/2016  18:47:38  PAGE 4
+
+
+  -------         ENDMOD        ?C?CLDPTR
+
+  -------         MODULE        ?C?CLDOPTR
+  C:0155H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?CSTOPTR
+  C:0182H         PUBLIC        ?C?CSTOPTR
+  -------         ENDMOD        ?C?CSTOPTR
+
+  -------         MODULE        ?C?ILDIX
+  C:01A4H         PUBLIC        ?C?ILDIX
+  -------         ENDMOD        ?C?ILDIX
+
+  -------         MODULE        ?C?ILDPTR
+  C:01BAH         PUBLIC        ?C?ILDPTR
+  -------         ENDMOD        ?C?ILDPTR
+
+  -------         MODULE        ?C?ILDOPTR
+  C:01E5H         PUBLIC        ?C?ILDOPTR
+  -------         ENDMOD        ?C?ILDOPTR
+
+  -------         MODULE        ?C?IILDPTR
+  C:021DH         PUBLIC        ?C?IILDPTR
+  -------         ENDMOD        ?C?IILDPTR
+
+  -------         MODULE        ?C?IILDOPTR
+  C:0255H         PUBLIC        ?C?IILDOPTR
+  -------         ENDMOD        ?C?IILDOPTR
+
+  -------         MODULE        ?C?ISTPTR
+  C:02A2H         PUBLIC        ?C?ISTPTR
+  -------         ENDMOD        ?C?ISTPTR
+
+  -------         MODULE        ?C?ISTOPTR
+  C:02C1H         PUBLIC        ?C?ISTOPTR
+  -------         ENDMOD        ?C?ISTOPTR
+
+  -------         MODULE        ?C?SLCMP
+  C:02EEH         PUBLIC        ?C?SLCMP
+  -------         ENDMOD        ?C?SLCMP
+
+  -------         MODULE        ?C?PLDOPTR
+  C:0304H         PUBLIC        ?C?PLDOPTR
+  -------         ENDMOD        ?C?PLDOPTR
+
+  -------         MODULE        ?C?PSTOPTR
+  C:0334H         PUBLIC        ?C?PSTOPTR
+  -------         ENDMOD        ?C?PSTOPTR
+
+  -------         MODULE        ?C?ICASE
+  C:038DH         PUBLIC        ?C?ICASE
+  -------         ENDMOD        ?C?ICASE
+
+  -------         MODULE        ?C?STRCMP
+  C:0538H         PUBLIC        ?C?STRCMP
+  -------         ENDMOD        ?C?STRCMP
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/07/2016  18:47:38  PAGE 5
+
+
+
+  -------         MODULE        STRLEN
+  C:0026H         PUBLIC        _STRLEN
+  -------         ENDMOD        STRLEN
+
+  -------         MODULE        ?C?MEMSET
+  C:0555H         PUBLIC        ?C?MEMSET
+  -------         ENDMOD        ?C?MEMSET
+
+  -------         MODULE        ?C?IILDX
+  C:0581H         PUBLIC        ?C?IILDX
+  -------         ENDMOD        ?C?IILDX
+
+  -------         MODULE        ?C?PLDIDATA
+  C:0597H         PUBLIC        ?C?PLDIDATA
+  -------         ENDMOD        ?C?PLDIDATA
+
+  -------         MODULE        ?C?PSTIDATA
+  C:05A0H         PUBLIC        ?C?PSTIDATA
+  -------         ENDMOD        ?C?PSTIDATA
+
+  -------         MODULE        ?C?PLDXDATA
+  C:05A9H         PUBLIC        ?C?PLDXDATA
+  -------         ENDMOD        ?C?PLDXDATA
+
+  -------         MODULE        ?C?PSTXDATA
+  C:05B2H         PUBLIC        ?C?PSTXDATA
+  -------         ENDMOD        ?C?PSTXDATA
+
+  -------         MODULE        ?C?PLDPDATA
+  C:05BBH         PUBLIC        ?C?PLDPDATA
+  -------         ENDMOD        ?C?PLDPDATA
+
+  -------         MODULE        ?C?PSTPDATA
+  C:05C4H         PUBLIC        ?C?PSTPDATA
+  -------         ENDMOD        ?C?PSTPDATA
+
+  -------         MODULE        ?C?PLDCODE
+  C:05CDH         PUBLIC        ?C?PLDCODE
+  -------         ENDMOD        ?C?PLDCODE
+
+Program Size: data=71.0 xdata=336 code=4202
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
