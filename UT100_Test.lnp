@@ -1,8 +1,0 @@
-"STARTUP.obj",
-"Uart.obj",
-"BufferRing.obj",
-"mian.obj",
-"DevObj.obj",
-"Isr.obj" 
-TO "UT100_Test" 
-RAMSIZE(256) 

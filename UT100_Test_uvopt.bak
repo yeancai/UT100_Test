@@ -191,8 +191,8 @@
       <Focus>0</Focus>
       <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>160</TopLine>
-      <CurrentLine>17</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\BufferRing.c</PathWithFileName>
       <FilenameWithoutPath>BufferRing.c</FilenameWithoutPath>
@@ -205,8 +205,8 @@
       <Focus>0</Focus>
       <ColumnNumber>18</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>268</TopLine>
-      <CurrentLine>291</CurrentLine>
+      <TopLine>214</TopLine>
+      <CurrentLine>294</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\mian.c</PathWithFileName>
       <FilenameWithoutPath>mian.c</FilenameWithoutPath>
